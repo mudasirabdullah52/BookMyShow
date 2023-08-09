@@ -2,11 +2,19 @@ package com.example.BookMyShow.Model;
 
 import com.example.BookMyShow.Enum.SeatType;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "show_seats")
+@Data
+@NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class ShowSeatEntity {
 
     @Id
